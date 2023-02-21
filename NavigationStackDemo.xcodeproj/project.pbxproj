@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7272F3129A5040100F1C2F9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272F3029A5040100F1C2F9 /* Book.swift */; };
+		C7272F3329A5052200F1C2F9 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272F3229A5052200F1C2F9 /* SecondTabView.swift */; };
+		C7272F3529A507F200F1C2F9 /* BookDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272F3429A507F200F1C2F9 /* BookDestinationView.swift */; };
 		C7441F1D29A37885008ACE91 /* NavigationStackDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */; };
 		C7441F1F29A37885008ACE91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7441F1E29A37885008ACE91 /* ContentView.swift */; };
 		C7441F2129A37888008ACE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7441F2029A37888008ACE91 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7272F3029A5040100F1C2F9 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C7272F3229A5052200F1C2F9 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
+		C7272F3429A507F200F1C2F9 /* BookDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDestinationView.swift; sourceTree = "<group>"; };
 		C7441F1929A37885008ACE91 /* NavigationStackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemoApp.swift; sourceTree = "<group>"; };
 		C7441F1E29A37885008ACE91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7272F2F29A503F400F1C2F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7272F3029A5040100F1C2F9 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7441F1029A37885008ACE91 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,7 @@
 				C7441F2C29A38851008ACE91 /* ThirdTab */,
 				C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */,
 				C7441F1E29A37885008ACE91 /* ContentView.swift */,
+				C7272F2F29A503F400F1C2F9 /* Model */,
 				C7441F2029A37888008ACE91 /* Assets.xcassets */,
 				C7441F2229A37888008ACE91 /* Preview Content */,
 			);
@@ -86,6 +101,8 @@
 		C7441F2B29A3883E008ACE91 /* SecondTab */ = {
 			isa = PBXGroup;
 			children = (
+				C7272F3229A5052200F1C2F9 /* SecondTabView.swift */,
+				C7272F3429A507F200F1C2F9 /* BookDestinationView.swift */,
 			);
 			path = SecondTab;
 			sourceTree = "<group>";
@@ -168,8 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7441F1F29A37885008ACE91 /* ContentView.swift in Sources */,
+				C7272F3529A507F200F1C2F9 /* BookDestinationView.swift in Sources */,
 				C7441F3029A38BB6008ACE91 /* DetailView.swift in Sources */,
 				C7441F2E29A38885008ACE91 /* FirstTabView.swift in Sources */,
+				C7272F3129A5040100F1C2F9 /* Book.swift in Sources */,
+				C7272F3329A5052200F1C2F9 /* SecondTabView.swift in Sources */,
 				C7441F1D29A37885008ACE91 /* NavigationStackDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
