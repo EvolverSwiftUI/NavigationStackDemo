@@ -7,20 +7,16 @@
 
 import SwiftUI
 
-
-enum SelectionState: Hashable {
-    case movie(Movie)
-    case song(Song)
-    case book(Book)
-    case settings
-}
-
 struct ThirdTabView: View {
     
     @StateObject var manager = ModelDataManager()
+    @StateObject var navigationManager = NavigationStateManager()
+    
+    /// nothingbut "user-defaults" only
+    @SceneStorage("navigationState") var navigationStateData: Data?
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $navigationManager.selectionPath) {
             RootView(manager: manager)
                 //.navigationDestination(for: Book.self) { book in
                 //    BookDestinationView(book: book)
@@ -39,7 +35,29 @@ struct ThirdTabView: View {
                 }
         }
         .environmentObject(manager)
+        .environmentObject(navigationManager)
         .environment(\.colorScheme, .dark)
+        /*
+        .task {
+            // reset during launch
+            navigationManager.data = navigationStateData
+            
+            // save state to user defaults
+            for await _ in navigationManager.objectWillChangeSequence {
+                navigationStateData = navigationManager.data
+            }
+        }
+         */
+        
+        //.onReceive(navigationManager.$selectionPath.dropFirst()) { updatedPath in
+        .onReceive(navigationManager.objectWillChange.dropFirst()) { _ in
+            // save state to user defaults
+            navigationStateData = navigationManager.data
+        }
+        .onAppear {
+            // reset during launch
+            navigationManager.data = navigationStateData
+        }
     }
 }
 

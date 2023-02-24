@@ -19,6 +19,7 @@
 		C7272F4329A5168D00F1C2F9 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272F4229A5168D00F1C2F9 /* MovieDetailView.swift */; };
 		C7272F4529A5169D00F1C2F9 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272F4429A5169D00F1C2F9 /* BookDetailView.swift */; };
 		C7272F4729A516AC00F1C2F9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7272F4629A516AC00F1C2F9 /* SettingsView.swift */; };
+		C7311A2029A5D5A30042189D /* NavigationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7311A1F29A5D5A30042189D /* NavigationStateManager.swift */; };
 		C7441F1D29A37885008ACE91 /* NavigationStackDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */; };
 		C7441F1F29A37885008ACE91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7441F1E29A37885008ACE91 /* ContentView.swift */; };
 		C7441F2129A37888008ACE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7441F2029A37888008ACE91 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		C7272F4229A5168D00F1C2F9 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		C7272F4429A5169D00F1C2F9 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		C7272F4629A516AC00F1C2F9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C7311A1F29A5D5A30042189D /* NavigationStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStateManager.swift; sourceTree = "<group>"; };
 		C7441F1929A37885008ACE91 /* NavigationStackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDemoApp.swift; sourceTree = "<group>"; };
 		C7441F1E29A37885008ACE91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C7311A1E29A5D4D30042189D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7272F3C29A5109200F1C2F9 /* ModelDataManager.swift */,
+				C7311A1F29A5D5A30042189D /* NavigationStateManager.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		C7441F1029A37885008ACE91 = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +100,11 @@
 		C7441F1B29A37885008ACE91 /* NavigationStackDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */,
+				C7441F1E29A37885008ACE91 /* ContentView.swift */,
 				C7441F2A29A3882A008ACE91 /* FirstTab */,
 				C7441F2B29A3883E008ACE91 /* SecondTab */,
 				C7441F2C29A38851008ACE91 /* ThirdTab */,
-				C7441F1C29A37885008ACE91 /* NavigationStackDemoApp.swift */,
-				C7441F1E29A37885008ACE91 /* ContentView.swift */,
 				C7272F2F29A503F400F1C2F9 /* Model */,
 				C7441F2029A37888008ACE91 /* Assets.xcassets */,
 				C7441F2229A37888008ACE91 /* Preview Content */,
@@ -132,11 +143,11 @@
 			children = (
 				C7272F3629A50D6000F1C2F9 /* ThirdTabView.swift */,
 				C7272F3E29A5126C00F1C2F9 /* RootView.swift */,
-				C7272F3C29A5109200F1C2F9 /* ModelDataManager.swift */,
 				C7272F4029A5167B00F1C2F9 /* SongDetailView.swift */,
 				C7272F4229A5168D00F1C2F9 /* MovieDetailView.swift */,
 				C7272F4429A5169D00F1C2F9 /* BookDetailView.swift */,
 				C7272F4629A516AC00F1C2F9 /* SettingsView.swift */,
+				C7311A1E29A5D4D30042189D /* View Models */,
 			);
 			path = ThirdTab;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 				C7441F1F29A37885008ACE91 /* ContentView.swift in Sources */,
 				C7272F3529A507F200F1C2F9 /* BookDestinationView.swift in Sources */,
 				C7272F3929A50D9B00F1C2F9 /* Movie.swift in Sources */,
+				C7311A2029A5D5A30042189D /* NavigationStateManager.swift in Sources */,
 				C7272F3729A50D6000F1C2F9 /* ThirdTabView.swift in Sources */,
 				C7272F3B29A50E2F00F1C2F9 /* Song.swift in Sources */,
 				C7441F3029A38BB6008ACE91 /* DetailView.swift in Sources */,

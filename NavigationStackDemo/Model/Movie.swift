@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movie: Identifiable, Hashable {
+struct Movie: Identifiable, Hashable, Codable {
     let title: String
     let id: UUID
     
